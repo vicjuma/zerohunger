@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>msoto</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+</head>
+<body>
+  <!-- <h1 class="h3  mt-3"></h1> -->
+  <div class="jumbotron jumbotron-fluid" style="background: #fff url('./background.jpg') no-repeat center center/cover; color: #fff;">
+    <div class="container text-center">
+      <h1 class="display-4">msoto App</h1>
+      <p class="lead"> Apply for a soft loan based on electronic.</p>
+    </div>
+  </div>
+  
+  <div class="container">  
+    <div class="row row-cols-1 row-cols-md-2">
+        <div class="col mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Create Product</h5>
+              <p class="card-text">You can create a product through this rest API application through the endpoint /products and the POST verb. You must be a logged in user to access this role. This is accomplished using a jsonwebtoken</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <div class="card-body ">
+              <h5 class="card-title">Edit Product</h5>
+              <p class="card-text">This role is also to only the logged in users. JWT is also used here to verify if the user is authorized to use this resource /products PATCH verb</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Get Products</h5>
+              <p class="card-text">This is not a protected route and so any body can view it. To get all products, the id property is not used. For a single product, the product with the specific id is fetched. /products or /products/:id and GET verb</p>
+            </div>
+          </div>
+        </div>
+        <div class="col mb-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Delete Product</h5>
+              <p class="card-text">endpoint /products/:id and DELETE verb. It is a protected route and anyone who wants to access it must have a valid JWT. It deletes a product with the specific id </p>
+            </div>
+          </div>
+        </div>
+      </div>                          
+    </div>
+    <div class="jumbotron" style="background: #fff url('./background.jpg') no-repeat center center/cover; color: #fff;">
+        <div class="container text-center">
+          <h1 class="display-6">Monitor your product</h1>
+          <p class="lead">Use postman to make requests to the various endpoints with the appropriate verbs. It also has the orders resouce with /orders endpoint. You can use the same verbs as above</p>
+        </div>
+      </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
